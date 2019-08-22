@@ -28,15 +28,53 @@ class MyApp extends StatelessWidget {
                       Container(
                         height: 100.0,
                         width: 100.0,
-                        margin: EdgeInsets.only(left: 20.0),
+                        // margin: EdgeInsets.only(left: 20.0),
                         padding: EdgeInsets.all(20.0),
                         color: Colors.yellow,
                         child: Text('Container 1'),
                       ),
                       Container(
+                        height: 180.0,
+                        width: 200.0,
+                        margin: EdgeInsets.symmetric(
+                            vertical: 10.0, horizontal: 5.0),
+                        // margin: EdgeInsets.only(left: 20.0),
+                        padding: EdgeInsets.all(20.0),
+                        color: Colors.teal,
+                        child: Column(
+                          children: <Widget>[
+                            CircleAvatar(
+                              radius: 30.0,
+                              backgroundImage:
+                                  AssetImage('images/icons8-autumn-240.png'),
+                            ),
+                            Text('Fall',
+                                style: TextStyle(
+                                  fontFamily: 'Pacifico',
+                                  fontSize: 10.0,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                            Container(
+                              margin: EdgeInsets.symmetric(
+                                  vertical: 10.0, horizontal: 5.0),
+                              color: Colors.white,
+                              child: Row(children: <Widget>[
+                                Icon(
+                                  Icons.phone_android,
+                                  color: Colors.black,
+                                ),
+                                SizedBox(width: 10.0),
+                                Text('647-561-2088')
+                              ]),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
                         height: 100.0,
                         width: 100.0,
-                        margin: EdgeInsets.only(left: 20.0),
+                        //margin: EdgeInsets.only(left: 20.0),
                         padding: EdgeInsets.all(20.0),
                         color: Colors.lightGreen,
                         child: Text('Container 1'),
