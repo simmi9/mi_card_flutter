@@ -59,19 +59,12 @@ class MyApp extends StatelessWidget {
                               margin: EdgeInsets.symmetric(
                                   vertical: 10.0, horizontal: 5.0),
                               color: Colors.white,
-                              child: Padding(
-                                padding: EdgeInsets.all(3.0),
-                                child: Row(
-                                  children: <Widget>[
-                                    Icon(
-                                      Icons.phone_android,
-                                      color: Colors.black,
-                                    ),
-                                    SizedBox(width: 10.0),
-                                    Text('647-561-2088')
-                                  ],
-                                ),
-                              ),
+                              child: ListTile(
+                                  leading: Icon(
+                                    Icons.phone_android,
+                                    color: Colors.black,
+                                  ),
+                                  title: Text('647-561-2088')),
                             ),
                           ],
                         ),
@@ -99,3 +92,17 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+/*
+child: Padding(
+padding: EdgeInsets.all(3.0),
+child: Row(
+children: <Widget>[
+Icon(
+Icons.phone_android,
+color: Colors.black,
+),
+SizedBox(width: 10.0),
+Text('647-561-2088')
+],
+),
+), */
