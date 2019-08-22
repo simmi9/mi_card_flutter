@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
                         child: Text('Container 1'),
                       ),
                       Container(
-                        height: 180.0,
+                        height: 200.0,
                         width: 200.0,
                         margin: EdgeInsets.symmetric(
                             vertical: 10.0, horizontal: 5.0),
@@ -55,16 +55,24 @@ class MyApp extends StatelessWidget {
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,
                                 )),
+                            SizedBox(
+                                height: 3.0,
+                                child: Divider(color: Colors.blueGrey)),
                             Card(
                               margin: EdgeInsets.symmetric(
-                                  vertical: 10.0, horizontal: 5.0),
+                                  vertical: 10.0, horizontal: 3.0),
                               color: Colors.white,
                               child: ListTile(
-                                  leading: Icon(
-                                    Icons.phone_android,
-                                    color: Colors.black,
-                                  ),
-                                  title: Text('647-561-2088')),
+                                leading: Icon(
+                                  Icons.phone_android,
+                                  color: Colors.black,
+                                ),
+                                title: Text('647-561-2088',
+                                    style: TextStyle(
+                                      fontFamily: 'Pacifico',
+                                      fontSize: 12.0,
+                                    )),
+                              ),
                             ),
                           ],
                         ),
