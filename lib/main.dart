@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
                         width: 100.0,
                         // margin: EdgeInsets.only(left: 20.0),
                         padding: EdgeInsets.all(20.0),
-                        color: Colors.yellow,
+                        color: Colors.cyan,
                         child: Text('Container 1'),
                       ),
                       Container(
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
                             vertical: 10.0, horizontal: 5.0),
                         // margin: EdgeInsets.only(left: 20.0),
                         padding: EdgeInsets.all(20.0),
-                        color: Colors.teal,
+                        color: Colors.amberAccent,
                         child: Column(
                           children: <Widget>[
                             CircleAvatar(
@@ -55,18 +55,23 @@ class MyApp extends StatelessWidget {
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,
                                 )),
-                            Container(
+                            Card(
                               margin: EdgeInsets.symmetric(
                                   vertical: 10.0, horizontal: 5.0),
                               color: Colors.white,
-                              child: Row(children: <Widget>[
-                                Icon(
-                                  Icons.phone_android,
-                                  color: Colors.black,
+                              child: Padding(
+                                padding: EdgeInsets.all(3.0),
+                                child: Row(
+                                  children: <Widget>[
+                                    Icon(
+                                      Icons.phone_android,
+                                      color: Colors.black,
+                                    ),
+                                    SizedBox(width: 10.0),
+                                    Text('647-561-2088')
+                                  ],
                                 ),
-                                SizedBox(width: 10.0),
-                                Text('647-561-2088')
-                              ]),
+                              ),
                             ),
                           ],
                         ),
